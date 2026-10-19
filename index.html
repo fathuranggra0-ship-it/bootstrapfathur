@@ -197,7 +197,7 @@
     </div>
 </div>
 
-<!-- Footer -->
+
 <footer class="bg-dark text-white text-center p-4 mt-5">
     <h5>CV Saya</h5>
     <p>SMK NEGERI 9 MEDAN | Kelas XI RPL 3</p>
@@ -227,5 +227,17 @@
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+document.getElementById("formKontak").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let modal = new bootstrap.Modal(
+        document.getElementById("modalPesan")
+    );
+
+    modal.show();
+    this.reset();
+});
+    </script>
 </body>
 </html>
